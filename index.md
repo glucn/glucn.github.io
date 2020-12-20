@@ -22,4 +22,4 @@ This is Gary Lu. Nice to meet you!
 - [Create AWS RDS MySQL instance with a secured master password using CloudFormation template](https://levelup.gitconnected.com/create-aws-rds-mysql-instance-with-a-secured-master-password-using-cloudformation-template-c3a767062972?source=github)
 
 ## Connect with me
-- [![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](www.linkedin.com/in/gary-yue-lu)
+- ![](https://i.stack.imgur.com/gVE0j.png) [LinkedIn](https://www.linkedin.com/in/gary-yue-lu)
