@@ -4,7 +4,7 @@ layout: default
 
 This is Gary Lu. Nice to meet you!
 
-## Projects
+## Personal Projects
 #### [Tofino](https://github.com/glucn/tofino)
 - (wip) Scrape and parse job postings, then analyze the data for information
 - Language: Python

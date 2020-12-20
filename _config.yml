@@ -1,2 +1,4 @@
 title: Gary Lu
 theme: jekyll-theme-slate
+google_analytics:
+show_downloads: false
