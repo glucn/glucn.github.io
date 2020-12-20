@@ -20,3 +20,6 @@ This is Gary Lu. Nice to meet you!
 - [Mock a DNS Server in Java](https://medium.com/swlh/mock-a-dns-server-in-java-a810b9338872?source=github)
 - [The “finally” block in AWS Step Functions state machine](https://medium.com/swlh/the-finally-block-in-aws-step-functions-state-machine-40048faaeffe?source=github)
 - [Create AWS RDS MySQL instance with a secured master password using CloudFormation template](https://levelup.gitconnected.com/create-aws-rds-mysql-instance-with-a-secured-master-password-using-cloudformation-template-c3a767062972?source=github)
+
+## Connect with me
+- [![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](www.linkedin.com/in/gary-yue-lu)
