@@ -15,6 +15,10 @@ This is Gary Lu. Nice to meet you!
 - Language: Go
 
 ## Blogs
+- [Golang: Decoding HTTP Response](https://glucn.wordpress.com/2018/02/11/decoding-http-response-in-golang/)
+- [Golang: Mocking an interface in Golang](https://glucn.wordpress.com/2018/03/04/mocking-an-interface-in-golang/)
+- [Querying Data in an Array of Nested Structures](https://glucn.wordpress.com/2018/03/12/querying-data-in-an-array-of-nested-structures/)
+- [Refactoring legacy codes](https://glucn.wordpress.com/2018/04/11/refactoring-legacy-codes/)
 - [Golang: An interface holding a nil value is not nil](https://medium.com/@glucn/golang-an-interface-holding-a-nil-value-is-not-nil-bb151f472cc7?source=github)
 - [Golang: The time complexity of append()](https://medium.com/vendasta/golang-the-time-complexity-of-append-2177dcfb6bad?source=github)
 - [Mock a DNS Server in Java](https://medium.com/swlh/mock-a-dns-server-in-java-a810b9338872?source=github)
