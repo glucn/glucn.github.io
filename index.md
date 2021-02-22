@@ -25,6 +25,8 @@ This is Gary Lu. Nice to meet you!
 - [Golang: Mocking an interface in Golang](https://glucn.wordpress.com/2018/03/04/mocking-an-interface-in-golang/)
 - [Golang: Decoding HTTP Response](https://glucn.wordpress.com/2018/02/11/decoding-http-response-in-golang/)
 
+## kaggle
+- [House Prices - Advanced Regression Techniques (Public score 0.12229, top 12%)](https://www.kaggle.com/garylucn/house-price) (Co-author: [juliayyy](https://github.com/juliayyy))
 
 ## Connect with me
 - ![](https://i.stack.imgur.com/gVE0j.png) [LinkedIn](https://www.linkedin.com/in/gary-yue-lu)
