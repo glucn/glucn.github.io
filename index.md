@@ -15,6 +15,7 @@ This is Gary Lu. Nice to meet you!
 - Language: Go
 
 ## Blogs
+- [Tuning Hyperparameters with Optuna](https://towardsdatascience.com/tuning-hyperparameters-with-optuna-af342facc549)
 - [Create AWS RDS MySQL instance with a secured master password using CloudFormation template](https://levelup.gitconnected.com/create-aws-rds-mysql-instance-with-a-secured-master-password-using-cloudformation-template-c3a767062972?source=github)
 - [The “finally” block in AWS Step Functions state machine](https://medium.com/swlh/the-finally-block-in-aws-step-functions-state-machine-40048faaeffe?source=github)
 - [Mock a DNS Server in Java](https://medium.com/swlh/mock-a-dns-server-in-java-a810b9338872?source=github)
@@ -26,7 +27,7 @@ This is Gary Lu. Nice to meet you!
 - [Golang: Decoding HTTP Response](https://glucn.wordpress.com/2018/02/11/decoding-http-response-in-golang/)
 
 ## kaggle
-- [House Prices - Advanced Regression Techniques (Public score 0.12229, top 12%)](https://www.kaggle.com/garylucn/house-price) (Co-author: [juliayyy](https://github.com/juliayyy))
+- [House Prices - Advanced Regression Techniques (Public score 0.12044, top 9%)](https://www.kaggle.com/garylucn/house-price) (Co-author: [juliayyy](https://github.com/juliayyy))
 
 ## Connect with me
 - ![](https://i.stack.imgur.com/gVE0j.png) [LinkedIn](https://www.linkedin.com/in/gary-yue-lu)
