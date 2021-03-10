@@ -15,11 +15,11 @@ This is Gary Lu. Nice to meet you!
 - Language: Go
 
 ## Blogs
-- [Tuning Hyperparameters with Optuna](https://towardsdatascience.com/tuning-hyperparameters-with-optuna-af342facc549?source=github)
-- [Create AWS RDS MySQL instance with a secured master password using CloudFormation template](https://levelup.gitconnected.com/create-aws-rds-mysql-instance-with-a-secured-master-password-using-cloudformation-template-c3a767062972?source=github)
-- [The “finally” block in AWS Step Functions state machine](https://medium.com/swlh/the-finally-block-in-aws-step-functions-state-machine-40048faaeffe?source=github)
-- [Mock a DNS Server in Java](https://medium.com/swlh/mock-a-dns-server-in-java-a810b9338872?source=github)
-- [Golang: The time complexity of append()](https://medium.com/vendasta/golang-the-time-complexity-of-append-2177dcfb6bad?source=github)
+- [Tuning Hyperparameters with Optuna](https://glucn.medium.com/tuning-hyperparameters-with-optuna-af342facc549?source=github)
+- [Create AWS RDS MySQL instance with a secured master password using CloudFormation template](https://glucn.medium.com/create-aws-rds-mysql-instance-with-a-secured-master-password-using-cloudformation-template-c3a767062972?source=github)
+- [The “finally” block in AWS Step Functions state machine](https://glucn.medium.com/the-finally-block-in-aws-step-functions-state-machine-40048faaeffe?source=github)
+- [Mock a DNS Server in Java](https://glucn.medium.com/mock-a-dns-server-in-java-a810b9338872?source=github)
+- [Golang: The time complexity of append()](https://glucn.medium.com/golang-the-time-complexity-of-append-2177dcfb6bad?source=github)
 - [Golang: An interface holding a nil value is not nil](https://glucn.medium.com/golang-an-interface-holding-a-nil-value-is-not-nil-bb151f472cc7?source=github)
 - [Refactoring legacy codes](https://glucn.wordpress.com/2018/04/11/refactoring-legacy-codes/)
 - [Querying Data in an Array of Nested Structures](https://glucn.wordpress.com/2018/03/12/querying-data-in-an-array-of-nested-structures/)
