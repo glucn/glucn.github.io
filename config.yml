@@ -1,0 +1,47 @@
+baseURL: https://glucn.github.io/
+languageCode: en-us
+title: glucn's blog
+theme: "PaperMod"
+paginate: 10
+
+googleAnalytics: UA-130792560-1
+enableRobotsTXT: true
+enableEmoji: true
+
+minify:
+    disableXML: true
+    # minifyOutput: true
+
+params:
+  env: production # to enable Google Analytics, opengraph, twitter-cards and schema.
+
+  homeInfoParams:
+    Title: "👋 Welcome to glucn's blog"
+    Content: >
+      This is Gary. I consider this blog as my vault of knowledge, hope you will find something useful here. Other than writing blogs, I'm a SDE at AWS.
+      
+      
+      
+      
+      Note: I'm still migrating the previous articles that I posted somewhere else to this site.
+      Before that is completed, please find them as following:
+        - ➡️ [DNSSEC Explained](https://glucn.medium.com/what-is-dnssec-90b89671c1dd?source=github)
+        - ➡️ [Tuning Hyperparameters with Optuna](https://glucn.medium.com/tuning-hyperparameters-with-optuna-af342facc549?source=github)
+        - ➡️ [Create AWS RDS MySQL instance with a secured master password using CloudFormation template](https://glucn.medium.com/create-aws-rds-mysql-instance-with-a-secured-master-password-using-cloudformation-template-c3a767062972?source=github)
+        - ➡️ [The “finally” block in AWS Step Functions state machine](https://glucn.medium.com/the-finally-block-in-aws-step-functions-state-machine-40048faaeffe?source=github)
+        - ➡️ [Mock a DNS Server in Java](https://glucn.medium.com/mock-a-dns-server-in-java-a810b9338872?source=github)
+        - ➡️ [Golang: The time complexity of append()](https://glucn.medium.com/golang-the-time-complexity-of-append-2177dcfb6bad?source=github)
+        - ➡️ [Golang: An interface holding a nil value is not nil](https://glucn.medium.com/golang-an-interface-holding-a-nil-value-is-not-nil-bb151f472cc7?source=github)
+        - ➡️ [Refactoring legacy codes](https://glucn.wordpress.com/2018/04/11/refactoring-legacy-codes/)
+        - ➡️ [Querying Data in an Array of Nested Structures](https://glucn.wordpress.com/2018/03/12/querying-data-in-an-array-of-nested-structures/)
+        - ➡️ [Golang: Mocking an interface in Golang](https://glucn.wordpress.com/2018/03/04/mocking-an-interface-in-golang/)
+        - ➡️ [Golang: Decoding HTTP Response](https://glucn.wordpress.com/2018/02/11/decoding-http-response-in-golang/)
+
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/gary-yue-lu"
+    - name: github
+      url: "https://github.com/glucn"
+    - name: twitter
+      url: "https://twitter.com/gary_luy/"
