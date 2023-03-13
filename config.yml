@@ -35,8 +35,6 @@ params:
         - ➡️ [Refactoring legacy codes](https://glucn.wordpress.com/2018/04/11/refactoring-legacy-codes/)
         - ➡️ [Querying Data in an Array of Nested Structures](https://glucn.wordpress.com/2018/03/12/querying-data-in-an-array-of-nested-structures/)
         - ➡️ [Golang: Mocking an interface in Golang](https://glucn.wordpress.com/2018/03/04/mocking-an-interface-in-golang/)
-        - ➡️ [Golang: Decoding HTTP Response](https://glucn.wordpress.com/2018/02/11/decoding-http-response-in-golang/)
-
 
   socialIcons:
     - name: linkedin
