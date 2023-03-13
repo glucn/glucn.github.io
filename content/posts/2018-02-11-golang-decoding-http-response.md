@@ -1,8 +1,10 @@
 ---
 title: "Golang: Decoding HTTP Response"
-date: 2018-02-11T00:00:00-07:00
+date: 2018-02-11T00:00:00
 draft: false
 ---
+
+![](https://glucn.files.wordpress.com/2018/02/fiveyears.jpg?w=1024&h=342&crop=1)
 
 ## TL;DR
 * Each step of deployment process should be independent of each other.

@@ -1,6 +1,6 @@
 ---
 title: "How to use Javascript library in Typescript Angular project"
-date: 2018-02-18T00:00:00-07:00
+date: 2018-02-18T00:00:00
 draft: false
 ---
 
