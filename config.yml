@@ -14,6 +14,7 @@ minify:
 
 params:
   env: production # to enable Google Analytics, opengraph, twitter-cards and schema.
+  defaultTheme: auto
 
   homeInfoParams:
     Title: "👋 Welcome to glucn's blog"
@@ -24,7 +25,6 @@ params:
       Note: I'm still migrating the previous articles that I posted somewhere else to this site.
       Before that is completed, please find them as following:
         - ➡️ [DNSSEC Explained](https://glucn.medium.com/what-is-dnssec-90b89671c1dd?source=github)
-        - ➡️ [Tuning Hyperparameters with Optuna](https://glucn.medium.com/tuning-hyperparameters-with-optuna-af342facc549?source=github)
 
   socialIcons:
     - name: linkedin
