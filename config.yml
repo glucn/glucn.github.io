@@ -29,7 +29,6 @@ params:
         - ➡️ [The “finally” block in AWS Step Functions state machine](https://glucn.medium.com/the-finally-block-in-aws-step-functions-state-machine-40048faaeffe?source=github)
         - ➡️ [Mock a DNS Server in Java](https://glucn.medium.com/mock-a-dns-server-in-java-a810b9338872?source=github)
         - ➡️ [Golang: The time complexity of append()](https://glucn.medium.com/golang-the-time-complexity-of-append-2177dcfb6bad?source=github)
-        - ➡️ [Golang: An interface holding a nil value is not nil](https://glucn.medium.com/golang-an-interface-holding-a-nil-value-is-not-nil-bb151f472cc7?source=github)
 
   socialIcons:
     - name: linkedin
