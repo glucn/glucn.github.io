@@ -38,3 +38,20 @@ params:
       url: "https://twitter.com/gary_luy/"
     - name: kaggle
       url: "https://www.kaggle.com/garylucn"
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 20
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # necessary for search
