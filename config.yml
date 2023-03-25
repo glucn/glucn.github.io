@@ -20,11 +20,6 @@ params:
     Title: "👋 Welcome to glucn's blog"
     Content: >
       This is Gary. I consider this blog as my vault of knowledge, hope you will find something useful here. Other than writing blogs, I'm a SDE at AWS.
-      
-      
-      Note: I'm still migrating the previous articles that I posted somewhere else to this site.
-      Before that is completed, please find them as following:
-        - ➡️ [DNSSEC Explained](https://glucn.medium.com/what-is-dnssec-90b89671c1dd?source=github)
 
   socialIcons:
     - name: linkedin
