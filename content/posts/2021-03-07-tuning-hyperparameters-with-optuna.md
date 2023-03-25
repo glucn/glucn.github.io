@@ -10,7 +10,7 @@ cover:
     caption: Photo by [Alexis Baydoun](https://unsplash.com/@alexisbaydoun?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
 ---
 
-[//]: # (![]&#40;https://miro.medium.com/v2/resize:fit:1100/0*tGXphGwXZ3O0eIW_&#41;)
+*Originally posted on [Medium](https://towardsdatascience.com/tuning-hyperparameters-with-optuna-af342facc549).*
 
 ## Introduction
 I recently finished my first machine learning project on Kaggle, predicting sale price with the Boston Housing dataset (co-author: [Julia Yang](https://medium.com/u/ec687522df18?source=post_page-----af342facc549--------------------------------)). Please find our work, which achieved top 9% among 5k competitors, at [[Top 9%] House Price](https://www.kaggle.com/garylucn/top-9-house-price).
