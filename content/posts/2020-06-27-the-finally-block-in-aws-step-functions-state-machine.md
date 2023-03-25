@@ -29,7 +29,7 @@ In AWS Step Functions, the default behavior when a state reports an exception is
 ## Solution
 I figured that we could use `Catch` field with the wildcard exception name `States.ALL` to implement the `finally` block. Let’s start with a simple example:
 
-```
+```json
 {
   "Comment": "An simple example",
   "StartAt": "DoSomething",
@@ -57,7 +57,7 @@ If the state `DoSomething` gets any exception, either thrown from inside the act
 ### Simple Case
 Now, let’s implement our `finally`:
 
-```
+```json
 {
   "Comment": "An simple example with Catch",
   "StartAt": "DoSomething",
@@ -97,7 +97,7 @@ Yes, the example above is oversimplified, it is very usual that a state machine 
 
 #### Option 1: Wrap the workflow body within a `Parallel` state which has only one branch
 
-```
+```json
 {
   "Comment": "An simple example using Parallel",
   "StartAt": "Prepare",
@@ -152,7 +152,7 @@ In this option, the state machine has three states: `Prepare`, `WorkflowBody`, a
 
 #### Option 2: Create a separate state machine for the workflow body and execute it from the one has the catcher
 
-```
+```json
 {
   "Comment": "An simple example with invoking another state machine",
   "StartAt": "Prepare",

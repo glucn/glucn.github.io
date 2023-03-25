@@ -13,7 +13,7 @@ I’ve been using the Java library [dnsjava](https://github.com/dnsjava/dnsjava)
 
 The application code is straightforward as the following. One thing I wanted to understand was how the library would handle retrying when the DNS query fails, for example, timed out.
 
-```
+```java
 import org.xbill.DNS.Lookup;
 import org.xbill.DNS.Name;
 import org.xbill.DNS.Record;
@@ -25,7 +25,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class LookupUtil {
-    
 
     public static List<String> forNameType(Resolver resolver, String nameStr, int type) {
         Name name;
@@ -55,7 +54,7 @@ I tried to write some tests by mocking the `Resolver` interface. However, it tur
 
 The code for the DNS server is like the following. To deliberately make the DNS query fail, I put a `Thread.sleep(5000)` in there.
 
-```
+```java
 private static class TestDNSServer {
     private Thread thread = null;
     private volatile boolean running = false;
@@ -126,7 +125,7 @@ private static class TestDNSServer {
 
 Firstly, I tested `SimpleResolver` with this mocked server. Note that I set the query timeout to be 1 second here.
 
-```
+```java
 @Test
 public void simpleResolver() throws IOException {
     TestDNSServer server = new TestDNSServer(53);
@@ -146,7 +145,7 @@ From this test, I could see that `SimpleResolver` would not retry when the query
 
 The next one I needed to test is `ExtendedResolver`, which was supposed to have some retry logic in it and should round-robin with multiple `Resolvers`.
 
-```
+```java
 @Test
 public void extendedResolver() throws IOException {
     List<TestDNSServer> servers = new ArrayList<>();
@@ -184,7 +183,7 @@ Why? It turned out `ExtendedResolver` did not override the method [`getTimeout()
 
 Please find the full test code as follows.
 
-```
+```java
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;

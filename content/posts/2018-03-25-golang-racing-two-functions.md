@@ -21,7 +21,7 @@ First of all, let's have a closer look at the "racing" we want to implement. The
 * Throws an error when both workers fail.
 
 We can address the requirement in several ways, but considering further reusing, we build a `Hedge` for this purpose.
-```
+```go
 type Hedge struct {
 	parentCtx context.Context
 	cancel    func()
@@ -90,7 +90,7 @@ func (h *Hedge) Go(f func() error) {
 
 And this is how we use `Hedge`.
 
-```
+```go
 func (s *Service) Search(ctx context.Context, ..., cursor string, pageSize int64) (*data, string, bool, int64, error) {
 	hedged, childCtx := HedgeWithContext(ctx)
 	var resultFromES, resultFromSpanner *searchResult
@@ -120,9 +120,9 @@ Problem solved!
 
 ## Extend Discussion
 #### Who is the winner?
-Surprisingly (at least for me), Spanner wins most of the times, maybe 8 out of 10 times. It even makes us consider to re-build some of the existing queries with Spanner. 
+Surprisingly (at least for me), Spanner wins most of the time, maybe 8 out of 10 times. It even makes us consider to re-build some of the existing queries with Spanner. 
 But before that, we need to have more concrete proof, we need to know exactly how many times Elastic wins and how many times Spanner wins. An old-school approach is adding some log before the dispatch returns the result. Instead of that, we will use `Datadog` to generate the statistics. The following statement will be enough.
-```
+```go
 	statsd.Incr("es-spanner-race", []string{"winner:elastic"}, 1)
 ```
 

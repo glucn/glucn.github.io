@@ -11,7 +11,7 @@ The project I am working on is backed by Google Cloud Datastore. In the project,
 
 Recently, we wanted to add a restriction that each customer can only have one account. My first attempt was to run a query on the `Account` model before creating the account. The simplified code is like this:
 
-```
+```python
 class Account(ndb.Model):
 
   @classmethod
@@ -62,26 +62,26 @@ In Datastore, there are two levels of data consistency:
 
 #### Global Query
 Queries without an ancestor are known as **Global Queries** and designed to work with an eventual consistency model.
-```
-account = Account.query().filter('customer_id =', customer_id).get()
+```python
+  account = Account.query().filter('customer_id =', customer_id).get()
 ```
 
 #### Keys-only Global Query
 A keys-only global query is a global query that returns only the keys of entities matching the query, not the attribute values of the entities.
-```
-account = Account.query().filter('customer_id =', customer_id).get(keys_only=True)
+```python
+  account = Account.query().filter('customer_id =', customer_id).get(keys_only=True)
 ```
 
 #### Ancestor Query
 An ancestor query limits its results to the specified entity and its descendants. When calling get (by key), Cloud Datastore will flush all pending updates on one of the replicas and index tables, then execute get.
-```
-ancestor = Customer.build_key(customer_id)
-account = Account.query(ancestor=ancestor).get()
+```python
+  ancestor = Customer.build_key(customer_id)
+  account = Account.query(ancestor=ancestor).get()
 ```
 
 #### Lookup by key
 The lookup by key call returns one entity or a set of entities specified by a key or a set of keys.
-```
+```python
   account_key = Account.build_key(account_id)
   account = account_key.get()
 ```
@@ -89,7 +89,7 @@ The lookup by key call returns one entity or a set of entities specified by a ke
 ## The Solution
 At the end of the day, I decided to create a new mapping table between `customer_id` and `account_id`, in which the key was built on `customer_id`. The code was updated to:
 
-```
+```python
 class Account(ndb.Model):
 
   @classmethod

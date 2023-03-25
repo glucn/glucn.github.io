@@ -12,7 +12,7 @@ draft: false
 
 ## The Problem
 I was working on a Go project, and one of the functions could decode an HTTP response to a Customer object. The HTTP response was a JSON like:
-```
+```json
 {
   "data": {
     "id": 123,
@@ -23,7 +23,7 @@ I was working on a Go project, and one of the functions could decode an HTTP res
 
 The old decoding code was:
 
-```
+```go
 import (
 	"encoding/json"
 	"errors"
@@ -49,7 +49,7 @@ func dataFromResponse(r *http.Response) (*Customer, error) {
 ```
 
 For a very good reason, we were going to change the ID field from int type to string type.
-```
+```json
 {
   "data": {
     "id": "123",
@@ -70,7 +70,7 @@ The third step was not super necessary. The only reason I did that was I did not
 
 My code for step 1 was:
 
-```
+```go
 import (
 	"encoding/json"
 	"errors"
@@ -122,7 +122,7 @@ This method could try twice to decode the response. The first run was unmarshali
 
 After step 3, the code was simplified back to only accepting string input.
 
-```
+```go
 import (
 	"encoding/json"
 	"errors"

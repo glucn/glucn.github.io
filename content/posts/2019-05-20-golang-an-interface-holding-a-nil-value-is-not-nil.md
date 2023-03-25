@@ -9,7 +9,7 @@ draft: false
 *Originally posted on [Medium](https://medium.com/@glucn/golang-an-interface-holding-a-nil-value-is-not-nil-bb151f472cc7).*
 
 Let's start directly with an example ([go playground](https://play.golang.org/p/UO1fbmJtqip)):
-```
+```go
 package main
 
 import "fmt"
@@ -35,7 +35,7 @@ It is somehow counter-intuitive at first glance, but it makes a lot more sense i
 Under the hood, an interface in Golang consists of two elements: type and value. When we assign a nil integer pointer to an interface in our example above, the interface becomes `(*int)(nil)`, and it is not nil. An interface equals nil only if both the type and value are nil.
 
 Here is another example of this ([go playground](https://play.golang.org/p/Jsmvx9PWO3M)), which is a bad pattern to return the error:
-```
+```go
 package main
 
 import "fmt"
@@ -68,7 +68,7 @@ func (e MyError) Error() string {
 This code will always print "ERROR". Actually, `doSomething()` will always return a non-nil error, because `error` is an interface that `MyError` implements and it is not nil when only the value is nil.
 
 To fix this code, we need to update `doSomething()` to return nil error explicitly.
-```
+```go
 func doSomething() error {
     if false {
         return &amp;MyError{"error"}
@@ -77,10 +77,10 @@ func doSomething() error {
 }
 ```
 So, how can we check if the value of an interface is nil? We need to use the functions in `reflect` package. In our first example, we can validate if the value of b is nil with:
+```go
+  fmt.Printf("b.value == nil is %t\n", b == nil || (reflect.ValueOf(b).Kind() == reflect.Ptr && reflect.ValueOf(b).IsNil()))
 ```
-fmt.Printf("b.value == nil is %t\n", b == nil || (reflect.ValueOf(b).Kind() == reflect.Ptr && reflect.ValueOf(b).IsNil()))
-```
-#### Conclusion
+## Conclusion
 
 -   An interface holding nil value is not nil. An interface equals nil only if both type and value are nil.
 

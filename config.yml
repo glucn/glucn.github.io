@@ -47,6 +47,10 @@ menu:
       url: /search/
       weight: 20
 
+markup:
+  highlight:
+    style: native
+
 outputs:
     home:
         - HTML

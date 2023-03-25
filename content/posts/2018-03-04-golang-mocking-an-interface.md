@@ -10,7 +10,7 @@ In Golang, interfaces allow us to replace certain functions with mocks to stub o
 
 Let's say we have an interface like this:
 
-```
+```go
 type Interface interface {
     Get(ctx context.Context, id string) (*model.Data, error)
     Update(ctx context.Context, data *model.Data) error
@@ -19,7 +19,7 @@ type Interface interface {
 
 #### Pattern 1: Mocking with stub functions
 We can define the mock struct as a collection of stub functions.
-```
+```go
 type InterfaceMock struct {
     GetFunc func(ctx context.Context, id string) (*model.Data, error)
     UpdateFunc func(ctx context.Context, data *model.Data) error
@@ -42,7 +42,7 @@ func (m *InterfaceMock) Update(ctx context.Context, data *model.Data) error {
 
 In our tests, we can define the actual stub functions.
 
-```
+```go
 type TestSuite struct {
     suite.Suite
     interfaceStub *InterfaceMock
@@ -67,7 +67,7 @@ We can define the logic of mocked functions as what we need in our test. It coul
 
 #### Pattern 2: Mocking with tracking variables
 We can define the mock struct as a collection of variables.
-```
+```go
 type InterfaceMock struct {
     Method string
     Args map[string]interface{}
@@ -97,7 +97,7 @@ func (m *InterfaceMock) Update(ctx context.Context, data *model.Data) error {
 
 In our test, we can specify the return value of the mocked functions and assert the actual calls made on them.
 
-```
+```go
 type TestSuite struct {
     suite.Suite
     interfaceStub *InterfaceMock
@@ -136,7 +136,7 @@ mockery -all -dir . -case underscore -inpkg
 ```
 
 In the generated file `mock_interface.go`, the codes should be like this:
-```
+```go
 type MockInterface struct {
     mock.Mock
 }
@@ -179,7 +179,7 @@ func (_m *MockInterface) Update(ctx context.Context, data *model.Data) error {
 
 In the test, we can either specify a value or a stub function for a return variable.
 
-```
+```go
 type TestSuite struct {
     suite.Suite
     interfaceStub *InterfaceMock

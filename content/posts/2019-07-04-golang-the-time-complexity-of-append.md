@@ -17,7 +17,7 @@ Before I move to the long answer, I'd like to add a disclaimer first: [The Go Pr
 ### What happens when we call append()
 
 The compiler's code steps in first. It rewrites `append(src, a)` to something like the following:
-```
+```go
 func() {
     s := src
     if cap(s) --- len(s) < 1 {
@@ -46,7 +46,7 @@ At first glance, I thought `memmove()` was where the O(N) time complexity was co
 ### CPU Profiling of append()
 
 I created a simple `main.go`, where `Append()` will build up a slice with 1024 elements.
-```
+```go
 package main
 
 const size = 1<<10
@@ -60,7 +60,7 @@ func Append() {
 }
 ```
 And a simple `main_test.go`:
-```
+```go
 package main
 
 import "testing"
@@ -94,7 +94,7 @@ We can play with the `size` and see that `memmove()` will spend a more significa
 We can see that `append()` is probably not the most performant way of building a slice. If we know the size of a slice beforehand, we want to use `make()` to create the slice with the known capacity (`cap`). But compared to `append()`, how much better will it be? Let's run some more benchmarks to see.
 
 Now, `main.go` looks like this:
-```
+```go
 package main
 
 var size = 1 << 10
@@ -116,7 +116,7 @@ func Make() {
 }
 ```
 And `main_test.go` becomes:
-```
+```go
 package main
 
 import "testing"
