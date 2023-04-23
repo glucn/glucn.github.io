@@ -24,8 +24,10 @@ Add Google AdSense to the website to monetize it 💸💸
     ```
 4. Create file `layouts/partials/extend_head.html` in the code of the website, if it doesn't exist.
     - Note: the content of this file will be added to `<head>...</head>` of the page by PaperMod.
-5. Paste the AdSense snippet into `layouts/partials/extend_head.html`.
-6. Verify the change locally, and deploy it. 
-7. Submit review request in Google Adsense, and wait for the processing. 
+5. Paste "AdSense code snippet" into `layouts/partials/extend_head.html`.
+6. Create file `static/ads.txt` in the code of the website, if it doesn't exist.
+7. Paste "Ads.txt snippet" from AdSense into `static/ads.txt`
+8. Verify the change locally, and deploy it. 
+9. Submit review request in Google Adsense, and wait for the processing. 
 
 DONE!
