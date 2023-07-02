@@ -193,6 +193,6 @@ It was very interesting to get my hand dirty with reproducing this ChatGPT-based
 
 2. The prompt has to contain information about what rooms there are in this smart home, what devices there are, and what can be done with those devices. All such information is hard-coded. A more reasonable approach would be to have HomeKit provide that information automatically. Unfortunately, I didn't find that possible.
 
-3. It is very cumbersome to parse the API response in Apple ShortCuts, and Apple Home only provides limited capacity with controlling the devices. If this integration was in-house built by Apple (or alternative, by Amazon for Alexa), such integration would be much simpler.
+3. It is very cumbersome to parse the API response in Apple ShortCuts, and Apple Home only provides limited capacity for controlling the devices. If this integration were in-house built by Apple (or alternatively, by Amazon for Alexa), such integration would be much simpler.
 
-With all these being said, I learned a lot in this process, most importantly, some hands-on experience with ChatGPT prompt engineering. And, it is so cool!
+With all this being said, I learned a lot in this process, most importantly, some hands-on experience with ChatGPT prompt engineering.
